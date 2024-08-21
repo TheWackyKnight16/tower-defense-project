@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://dvjext3odxabc"]
+
+[ext_resource type="PackedScene" uid="uid://dyun7c5uf51bi" path="res://Scenes/turret.tscn" id="1_fbeug"]
+[ext_resource type="PackedScene" uid="uid://b5jva0drirn0a" path="res://Scenes/enemy.tscn" id="2_bjism"]
+
+[node name="Game" type="Node"]
+
+[node name="Turret" parent="." instance=ExtResource("1_fbeug")]
+position = Vector2(914, 372)
+damage = null
+fire_rate = null
+range = null
+turret_mode = 2
+
+[node name="Enemy" parent="." instance=ExtResource("2_bjism")]
+position = Vector2(593, 229)
+
+[node name="Enemy2" parent="." instance=ExtResource("2_bjism")]
+position = Vector2(451, 488)
+max_health = 200
+
+[node name="Enemy3" parent="." instance=ExtResource("2_bjism")]
+position = Vector2(396, 329)
+max_health = 150
+
+[node name="Enemy4" parent="." instance=ExtResource("2_bjism")]
+position = Vector2(182, 210)
+
+[node name="Enemy5" parent="." instance=ExtResource("2_bjism")]
+position = Vector2(105, 488)

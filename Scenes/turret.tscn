@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=3 uid="uid://dyun7c5uf51bi"]
+
+[ext_resource type="Script" path="res://Scripts/TurretController.gd" id="1_kfx65"]
+[ext_resource type="Texture2D" uid="uid://5poeel8jy0cu" path="res://icon.svg" id="2_1s1ul"]
+[ext_resource type="PackedScene" uid="uid://b7aboj7a0w1xm" path="res://Scenes/projectile.tscn" id="2_h76yq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bo51v"]
+radius = 600.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6612g"]
+radius = 63.3482
+
+[node name="Turret" type="Node2D"]
+script = ExtResource("1_kfx65")
+projectile_scene = ExtResource("2_h76yq")
+
+[node name="TurretRangeArea2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TurretRangeArea2D"]
+shape = SubResource("CircleShape2D_bo51v")
+
+[node name="TurretArea2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TurretArea2D"]
+shape = SubResource("CircleShape2D_6612g")
+
+[node name="RangeSprite" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.14902)
+show_behind_parent = true
+texture_filter = 1
+rotation = 3.14159
+scale = Vector2(9.378, 9.378)
+texture = ExtResource("2_1s1ul")
+
+[node name="TurretSprite" type="Sprite2D" parent="."]
+texture = ExtResource("2_1s1ul")
+
+[connection signal="area_entered" from="TurretRangeArea2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="TurretRangeArea2D" to="." method="_on_area_2d_area_exited"]
