@@ -33,3 +33,66 @@ enemy_type = 2
 [node name="Enemy5" parent="." instance=ExtResource("2_bjism")]
 position = Vector2(-1097, 458)
 enemy_type = 2
+
+[node name="Enemy6" parent="." instance=ExtResource("2_bjism")]
+position = Vector2(-1257, 288)
+enemy_type = 1
+
+[node name="Enemy7" parent="." instance=ExtResource("2_bjism")]
+position = Vector2(-1399, 547)
+enemy_type = 1
+max_health = 150
+
+[node name="Enemy8" parent="." instance=ExtResource("2_bjism")]
+position = Vector2(-1454, 388)
+max_health = 150
+
+[node name="Enemy9" parent="." instance=ExtResource("2_bjism")]
+position = Vector2(-1668, 269)
+enemy_type = 2
+
+[node name="Enemy10" parent="." instance=ExtResource("2_bjism")]
+position = Vector2(-1745, 547)
+enemy_type = 2
+
+[node name="Enemy11" parent="." instance=ExtResource("2_bjism")]
+position = Vector2(-594, -380)
+enemy_type = 1
+
+[node name="Enemy12" parent="." instance=ExtResource("2_bjism")]
+position = Vector2(-736, -121)
+enemy_type = 1
+max_health = 150
+
+[node name="Enemy13" parent="." instance=ExtResource("2_bjism")]
+position = Vector2(-791, -280)
+max_health = 150
+
+[node name="Enemy14" parent="." instance=ExtResource("2_bjism")]
+position = Vector2(-1005, -399)
+enemy_type = 2
+
+[node name="Enemy15" parent="." instance=ExtResource("2_bjism")]
+position = Vector2(-1082, -121)
+enemy_type = 2
+
+[node name="Enemy16" parent="." instance=ExtResource("2_bjism")]
+position = Vector2(-1295, -432)
+enemy_type = 1
+
+[node name="Enemy17" parent="." instance=ExtResource("2_bjism")]
+position = Vector2(-1437, -173)
+enemy_type = 1
+max_health = 150
+
+[node name="Enemy18" parent="." instance=ExtResource("2_bjism")]
+position = Vector2(-1492, -332)
+max_health = 150
+
+[node name="Enemy19" parent="." instance=ExtResource("2_bjism")]
+position = Vector2(-1706, -451)
+enemy_type = 2
+
+[node name="Enemy20" parent="." instance=ExtResource("2_bjism")]
+position = Vector2(-1783, -173)
+enemy_type = 2
